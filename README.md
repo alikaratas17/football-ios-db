@@ -1,4 +1,9 @@
 # Football-IOS-DB
 
-# Resources:
+# Resources (for gathering data):
 - https://datahub.io/collections/football
+
+### Possible Datasets we can use:
+-
+-
+-
