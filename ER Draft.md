@@ -54,4 +54,12 @@ Datasets we plan to use:
 - https://www.kaggle.com/datasets/hugomathien/soccer
 - https://www.kaggle.com/datasets/cclayford/statbunker-football-stats?select=Tables+2014-15.csv
 - https://www.kaggle.com/datasets/davidcariboo/player-scores?select=leagues.csv
+    - appearances table - player_id, game_id, competition_id
+    - clubs table - club_id, pretty_name, coach_name
+    - competitions table - competition_id, name, domestic_league_code, country_name?
+    - games table - game_id, season, home_club_id, away_club_id, home_club_goals, away_club_goals, stadium, referee
+    - leagues table - league_id, name
+    - players table - player_id, current_club_id, pretty_name, date_of_birth, position, last_season
+    - player_valuations - player_id, market_value?
 - https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017
+    - home_team, away_team, home_score, away_score, tournament
