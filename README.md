@@ -1,5 +1,5 @@
 # Football-IOS-DB
-Library for IOS Mysql -> https://github.com/oleghnidets/OHMySQL
+
 # Resources (for gathering data):
 - https://datahub.io/collections/football
 
