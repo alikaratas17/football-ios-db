@@ -2,8 +2,8 @@ ER Model
 
 - Entities
 - Player -> position
-- Team -> total number of trophies won
-- Club Team (sub class of team) -> league titles won, cup titles won, international cup titles won
+- Team
+- Club Team (sub class of team)
 - National Team (sub class of team)
 - Manager
 - Competition-> name, season
@@ -17,6 +17,16 @@ Relationships
 - Player_plays_in_club(club team, player) -> season, # of matches played, # of goals scores, # of clean sheets, # of assists
 - Winner_of(competition,team)-> award_name
 - Winner_of(competition,player)-> award_name
+
+Relational Model
+Player(name[key],position)
+Team(name,id[key])
+Manager(name[key])
+Competition(name[key],season[key])
+Club_Team(foreign key team_id[key])
+National_Team(foreign_key team_id[key])
+...
+
 
 Queries
 - Top [stat of choice]/Scorer/Asister in [Given Competion]
