@@ -30,3 +30,12 @@ Queries
 - En cok mac yapilan stat
 - Oyuncu ismi verildiginde en cok macini kazandigi hakem
 - Takimlarin en cok personal award kazanilmasina gore siralanmasi
+Needed data
+- Personal statistics for club and national competitions ( if only club is available modif query)
+- Team competition winning results
+- manager manages team data
+- team age average by compet.
+- personal competition winning results
+- stadiums of matches
+- player played in match (or change query for player of team) player team data, referee of matches data
+
