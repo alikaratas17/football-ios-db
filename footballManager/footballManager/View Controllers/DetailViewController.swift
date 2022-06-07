@@ -10,6 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var selectedId: String?
+    var qNum: String?
     
     let playerDataSource = PlayerDataSource()
 

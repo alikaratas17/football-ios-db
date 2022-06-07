@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(inputField.text)
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,6 +26,10 @@ class ViewController: UIViewController {
             let row = mainScreenDataSource.getRowWithIndex(index: getRealIndex(indexPath: indexPath))
             let detailViewController = segue.destination as! DetailViewController
             detailViewController.selectedId = row
+            detailViewController.qNum = String(getRealIndex(indexPath: indexPath))
+            print(inputField.text)
+            print(detailViewController.qNum)
+            detailViewController.playerDataSource.getQuery(qNum: detailViewController.qNum,inputStr:inputField.text)
         }
     }
 

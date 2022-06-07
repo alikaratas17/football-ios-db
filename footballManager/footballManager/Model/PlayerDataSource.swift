@@ -29,7 +29,7 @@ struct PlayerDataSource {
         return stringArray[index]
     }
 
-    func getQuery(qNum: String,inputStr:String) {
+    func getQuery(qNum: String?,inputStr:String?) {
         let urlSession = URLSession.shared
         if let url = URL(string: "\(baseURL)?qNum=\(qNum)&input=\(inputStr)") {
             var urlRequest = URLRequest(url: url)
