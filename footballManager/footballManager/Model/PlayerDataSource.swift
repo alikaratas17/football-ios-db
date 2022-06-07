@@ -30,8 +30,10 @@ struct PlayerDataSource {
     }
 
     func getQuery(qNum: String?,inputStr:String?) {
+        //print(qNum!)
+        //print(inputStr!)
         let urlSession = URLSession.shared
-        if let url = URL(string: "\(baseURL)?qNum=\(qNum)&input=\(inputStr)") {
+        if let url = URL(string: "\(baseURL)?qNum=\(qNum!)&input=\(inputStr!)") {
             var urlRequest = URLRequest(url: url)
             urlRequest.httpMethod = "GET"
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")

@@ -27,8 +27,8 @@ class ViewController: UIViewController {
             let detailViewController = segue.destination as! DetailViewController
             detailViewController.selectedId = row
             detailViewController.qNum = String(getRealIndex(indexPath: indexPath))
-            print(inputField.text)
-            print(detailViewController.qNum)
+            //print(inputField.text)
+            //print(detailViewController.qNum)
             detailViewController.playerDataSource.getQuery(qNum: detailViewController.qNum,inputStr:inputField.text)
         }
     }
