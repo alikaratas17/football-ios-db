@@ -9,49 +9,29 @@
 import UIKit
 
 struct PlayerDataSource {
-    private var playerArray: [Player] = []
+    //private var playerArray: [Player] = []
+    private var stringArray: [String] = []
     
     private let baseURL = "http://localhost/Project/test.php"
 
     init() {
-        playerArray.append(Player(name: "Ali"))
-        playerArray.append(Player(name: "Burcu"))
+        //playerArray.append(Player(name: "Ali"))
+        //playerArray.append(Player(name: "Burcu"))
+        stringArray.append("result1")
+        stringArray.append("result2")
     }
     
     func getNumberOfRows() -> Int {
-        return playerArray.count
+        return stringArray.count
     }
     
-    func getRowWithIndex(index: Int) -> Player {
-        return playerArray[index]
+    func getRowWithIndex(index: Int) -> String {
+        return stringArray[index]
     }
-    struct Book: Decodable {
 
-        // MARK: - Properties
+      func loadPlayerList() {
 
-        let title: String
-        let author: String
-
-    }
-    func loadPlayerList() {
-        /*
-        let url = URL(string:"\(baseURL)")!
         
-        var request = URLRequest(url: url)
-
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let data = data {
-                if let books = try? JSONDecoder().decode([Book].self, from: data) {
-                    print(books)
-                } else {
-                    print("Invalid Response")
-                }
-            } else if let error = error {
-                print("HTTP Request Failed \(error)")
-            }
-        }
-        */
         
         let urlSession = URLSession.shared
         if let url = URL(string: "\(baseURL)?qNum=1&name=allianz-cup") {
