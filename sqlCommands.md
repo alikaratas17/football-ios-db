@@ -1,5 +1,14 @@
+## TODOS FOR REPORT
+- Project Description
+- ER Diagram
+- COMPLEX SQL Queries
+- SCREENSHOTS
+
+
 ## Query Ideas
 - Verilmis bir competitionda all time veya bir sezon icin en cok gol atan ve asist yapan oyuncu benzer sekilde en cok kirmizi kart alan, sari kart alan oyuncular
+
+
 SELECT player.name, MAX(player.goals)
 FROM competition, player_played_in, player
 WHERE competition.name = inputField.text AND competition.comp_id = player_played_in.competition_id AND player.player_id = player_played_in.player_id  
