@@ -5,6 +5,8 @@ FROM competition, player_played_in, player
 WHERE competition.name = inputField.text AND competition.comp_id = player_played_in.competition_id AND player.player_id = player_played_in.player_id  
 GROUP BY player.player_id
 
+select P.name, sum(P2.goals) from player P, PLAYER_PLAYED_IN P2, COMPETITION C WHERE C.comp_id= P2.competition_id and P.player_id= P2.player_id and C.name="allianz-cup" group by P.player_id order BY SUM(P2.goals) DESC limit 1;
+
 - Top (forward) players [scored more than 20 times in their league] who have never scored in champions league
 SELECT player.name
 FROM player
