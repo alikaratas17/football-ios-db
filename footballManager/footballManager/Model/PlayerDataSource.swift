@@ -69,14 +69,21 @@ class PlayerDataSource {
                     if qNum == "3" {
                         var splitted: [String.SubSequence] = []
                         splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
-                        self.stringArray.append("Player: \(splitted[0])")
-                        self.stringArray.append("Number of Goals: \(splitted[1])")
+                        splitted.forEach { item in
+                            if item == splitted[splitted.count-1]{
+                            }else{
+                            self.stringArray.append("Club: \(item)")
+                            }
+                        }
                     }
                     if qNum == "4" {
                         var splitted: [String.SubSequence] = []
                         splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
                         self.stringArray.append("Player: \(splitted[0])")
-                        self.stringArray.append("Number of Goals: \(splitted[1])")
+                        self.stringArray.append("Home Goals: \(splitted[1])")
+                        self.stringArray.append("Away Goals: \(splitted[2])")
+                        self.stringArray.append("Goals: \(splitted[3])")
+                        self.stringArray.append("Assists: \(splitted[4])")
                     }
                     
                 }

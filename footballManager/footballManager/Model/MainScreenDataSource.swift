@@ -13,6 +13,9 @@ struct MainScreenDataSource {
     init() {
         mainScreenArray.append("Players Scored Highest In a Given Competition")
         mainScreenArray.append("Top 10 Matches")
+        mainScreenArray.append("Top 10 Matches")
+        mainScreenArray.append("Top 10 Matches")
+        mainScreenArray.append("Match Where a Single Player Has Highest Goals")
     }
     
     func getNumberOfRows() -> Int {
