@@ -11,7 +11,7 @@ struct MainScreenDataSource {
     private var mainScreenArray: [String] = []
 
     init() {
-        mainScreenArray.append("Top 10 Players")
+        mainScreenArray.append("Players Scored Highest In a Given Competition")
         mainScreenArray.append("Top 10 Matches")
     }
     

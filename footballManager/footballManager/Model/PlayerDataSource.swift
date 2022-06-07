@@ -8,7 +8,7 @@
 //import Foundation
 import UIKit
 
-struct PlayerDataSource {
+class PlayerDataSource {
     //private var playerArray: [Player] = []
     private var stringArray: [String] = []
     
@@ -17,8 +17,7 @@ struct PlayerDataSource {
     init() {
         //playerArray.append(Player(name: "Ali"))
         //playerArray.append(Player(name: "Burcu"))
-        stringArray.append("result1")
-        stringArray.append("result2")
+
     }
     
     func getNumberOfRows() -> Int {
@@ -29,7 +28,7 @@ struct PlayerDataSource {
         return stringArray[index]
     }
 
-    func getQuery(qNum: String?,inputStr:String?) {
+    func getQuery(qNum: String?,inputStr:String?){
         //print(qNum!)
         //print(inputStr!)
         let urlSession = URLSession.shared
@@ -49,12 +48,44 @@ struct PlayerDataSource {
                     //    self.delegate?.playerListLoaded()
                     //print(data)
                    // }
+                    if qNum == "0" {
+                        var splitted: [String.SubSequence] = []
+                        splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
+                        self.stringArray.append("Player: \(splitted[0])")
+                        self.stringArray.append("Number of Goals: \(splitted[1])")
+                    }
+                    if qNum == "1" {
+                        var splitted: [String.SubSequence] = []
+                        splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
+                        self.stringArray.append("Refree: \(splitted[0])")
+                        self.stringArray.append("Goal Average: \(splitted[1])")
+                    }
+                    if qNum == "2" {
+                        var splitted: [String.SubSequence] = []
+                        splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
+                        self.stringArray.append("Player: \(splitted[0])")
+                        self.stringArray.append("ATH Market Value: \(splitted[1])")
+                    }
+                    if qNum == "3" {
+                        var splitted: [String.SubSequence] = []
+                        splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
+                        self.stringArray.append("Player: \(splitted[0])")
+                        self.stringArray.append("Number of Goals: \(splitted[1])")
+                    }
+                    if qNum == "4" {
+                        var splitted: [String.SubSequence] = []
+                        splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
+                        self.stringArray.append("Player: \(splitted[0])")
+                        self.stringArray.append("Number of Goals: \(splitted[1])")
+                    }
                     
                 }
             }
             dataTask.resume()
         }
+        
+        
     }
-
+    
     
 }
