@@ -12,9 +12,9 @@ struct MainScreenDataSource {
 
     init() {
         mainScreenArray.append("Players Scored Highest In a Given Competition")
-        mainScreenArray.append("Top 10 Matches")
-        mainScreenArray.append("Top 10 Matches")
-        mainScreenArray.append("Top 10 Matches")
+        mainScreenArray.append("Referees (Who Were In More Than 100 Matches) With Highest Average Goals Scored In a Match")
+        mainScreenArray.append("Retired Player With Highest Total Goal Contribution/ATH Market Value Ratio (Larger Than 10m)")
+        mainScreenArray.append("Clubs Having More Than 500 Home Goals and 500 Away Goals")
         mainScreenArray.append("Match Where a Single Player Has Highest Goals")
     }
     
