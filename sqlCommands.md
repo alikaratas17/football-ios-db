@@ -1,7 +1,6 @@
 ## TODOS FOR REPORT
 - Project Description
 - ER Diagram
-- Data Sources
 - COMPLEX SQL Queries
 - SCREENSHOTS
 
