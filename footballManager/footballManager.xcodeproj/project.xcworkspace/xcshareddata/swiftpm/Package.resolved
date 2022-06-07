@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "async-kit",
+        "repositoryURL": "https://github.com/vapor/async-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "017dc7da68c1ec9f0f46fcd1a8002d14a5662732",
+          "version": "1.12.0"
+        }
+      },
+      {
+        "package": "mysql-nio",
+        "repositoryURL": "https://github.com/vapor/mysql-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "f0e8ad7e18e870e8665311d70bf3f01dcd6024a8",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "package": "sql-kit",
+        "repositoryURL": "https://github.com/vapor/sql-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "89b0a0a5f110e77272fb5a775064a31bfc1f155c",
+          "version": "3.18.0"
+        }
+      },
+      {
+        "package": "swift-crypto",
+        "repositoryURL": "https://github.com/apple/swift-crypto.git",
+        "state": {
+          "branch": null,
+          "revision": "d9825fa541df64b1a7b182178d61b9a82730d01f",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "124119f0bb12384cef35aa041d7c3a686108722d",
+          "version": "2.40.0"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "1750873bce84b4129b5303655cce2c3d35b9ed3a",
+          "version": "2.19.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
