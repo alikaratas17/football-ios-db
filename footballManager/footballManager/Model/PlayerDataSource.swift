@@ -54,7 +54,7 @@ struct PlayerDataSource {
         */
         
         let urlSession = URLSession.shared
-        if let url = URL(string: "\(baseURL)?test=123&name2=value2") {
+        if let url = URL(string: "\(baseURL)?qNum=1&name=allianz-cup") {
             var urlRequest = URLRequest(url: url)
             urlRequest.httpMethod = "GET"
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
