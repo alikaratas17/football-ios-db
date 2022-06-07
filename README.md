@@ -1,5 +1,7 @@
 # Football-IOS-DB
-
+# Downloaded Datasets:
+- Results.csv from (https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017?resource=download)
+- All from (https://www.kaggle.com/datasets/davidcariboo/player-scores?select=appearances.csv)
 # Resources (for gathering data):
 - https://datahub.io/collections/football
 
