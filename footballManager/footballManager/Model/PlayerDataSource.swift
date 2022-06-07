@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerDataSource {
     //private var playerArray: [Player] = []
-    private var stringArray: [String] = []
+    public var stringArray: [String] = []
     
     private let baseURL = "http://localhost/Project/test.php"
 
@@ -48,7 +48,6 @@ class PlayerDataSource {
                     //    self.delegate?.playerListLoaded()
                     //print(data)
                    // }
-                    self.stringArray = []
                     if qNum == "0" {
                         var splitted: [String.SubSequence] = []
                         splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
@@ -86,6 +85,8 @@ class PlayerDataSource {
                         self.stringArray.append("Goals: \(splitted[2])")
                         self.stringArray.append("Assists: \(splitted[3])")
                     }
+                    print(self.stringArray)
+                    
                     
                 }
             }
