@@ -10,7 +10,3 @@ import Foundation
 struct Player : Decodable{
     let name: String
 }
-struct TestJSONObject : Encodable{
-    let foo:String
-    let bar : Int
-}

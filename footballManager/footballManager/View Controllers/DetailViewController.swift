@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //playerDataSource.loadPlayerList()
+        //playerDataSource.getQuery(qNum: String,inputStr:String)
     }
     
     override func viewWillAppear(_ animated: Bool) {
