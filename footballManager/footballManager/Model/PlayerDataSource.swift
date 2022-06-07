@@ -48,6 +48,7 @@ class PlayerDataSource {
                     //    self.delegate?.playerListLoaded()
                     //print(data)
                    // }
+                    self.stringArray = []
                     if qNum == "0" {
                         var splitted: [String.SubSequence] = []
                         splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
@@ -63,6 +64,7 @@ class PlayerDataSource {
                     if qNum == "2" {
                         var splitted: [String.SubSequence] = []
                         splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
+                        print(splitted)
                         self.stringArray.append("Player: \(splitted[0])")
                         self.stringArray.append("ATH Market Value: \(splitted[1])")
                     }
@@ -80,10 +82,9 @@ class PlayerDataSource {
                         var splitted: [String.SubSequence] = []
                         splitted = String(data: data, encoding: .utf8)!.split(separator: ";")
                         self.stringArray.append("Player: \(splitted[0])")
-                        self.stringArray.append("Home Goals: \(splitted[1])")
-                        self.stringArray.append("Away Goals: \(splitted[2])")
-                        self.stringArray.append("Goals: \(splitted[3])")
-                        self.stringArray.append("Assists: \(splitted[4])")
+                        self.stringArray.append("Score: \(splitted[1])")
+                        self.stringArray.append("Goals: \(splitted[2])")
+                        self.stringArray.append("Assists: \(splitted[3])")
                     }
                     
                 }
