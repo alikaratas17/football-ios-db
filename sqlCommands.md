@@ -1,7 +1,27 @@
 ## Query Ideas
 - Verilmis bir competitionda all time veya bir sezon icin en cok gol atan ve asist yapan oyuncu benzer sekilde en cok kirmizi kart alan, sari kart alan oyuncular
+SELECT player.name, MAX(player.goals)
+FROM competition, player_played_in, player
+WHERE competition.name = inputField.text AND competition.comp_id = player_played_in.competition_id AND player.player_id = player_played_in.player_id  
+GROUP BY player.player_id
+
 - Top (forward) players [scored more than 20 times in their league] who have never scored in champions league
+SELECT player.name
+FROM player
+WHERE player.position = "forward" AND player.player_id IN ((SELECT player.player_id
+FROM player
+WHERE player.goals > 20)
+EXCEPT
+(SELECT player.player_id
+FROM competition, player_played_in, player
+WHERE competition.name = "champions" AND competition.comp_id = player_played_in.competition_id AND player.player_id = player_played_in.player_id))
+
+
 - top 10 ic saha ve top 10 deplasman maci kazanmis takimlarin kesisimi
+SELECT
+FROM
+WHERE
+
 - Emekli futbolculardan ATH market valuesu en yuksek olani
 - Takim degeri 10m un uzerindeki takimlar arasindan bir oyuncusunun degeri percentage bazli en yuksek olan takimi o oyuncu ile birlikte
 - En cok mac yapilan stat

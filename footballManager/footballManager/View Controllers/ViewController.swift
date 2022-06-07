@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     let mainScreenDataSource = MainScreenDataSource()
     
     @IBOutlet weak var mainScreenTableView: UITableView!
-
+    @IBOutlet weak var inputField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        print(inputField.text)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

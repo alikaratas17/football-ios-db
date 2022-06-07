@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        playerDataSource.loadPlayerList()
+        //playerDataSource.loadPlayerList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +57,7 @@ extension DetailViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath) as! DetailTableViewCell
         
         let row = playerDataSource.getRowWithIndex(index: getRealIndex(indexPath: indexPath))
-        cell.detailLabel.text = row.name
+        cell.detailLabel.text = row
         return cell
     }
 }
